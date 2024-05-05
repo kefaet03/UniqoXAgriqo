@@ -13,7 +13,7 @@ var districtsByZone = {
   7: ["Faridpur", "Madaripur", "Gopalganj", "Shariatpur", "Rajbari"],
   8: ["Chuadanga", "Meherpur", "Jashore", "Jhenaidah", "Magura", "Kushtia"],
   9: ["Mymensingh", "Netrokona", "Jamalpur", "Sherpur", "Kishoreganj"],
-  10: ["Rajshahi", "Chapai Nawabganj", "Natore", "Naogaon"],
+  10: ["Rajshahi", "Nawabganj", "Natore", "Naogaon"],
   11: ["Rangamati", "Khagrachhari", "Bandarban"],
   12: ["Sylhet", "Moulvibazar", "Habiganj", "Sunamganj"],
   13: ["Rangpur", "Kurigram", "Gaibandha", "Lalmonirhat", "Nilphamari"],
@@ -124,7 +124,7 @@ function handleFormSubmit(event) {
   var selectedDistrict =
     districtSelect.options[districtSelect.selectedIndex].text;
 
-  if (selectedDistrict == "Borguna") {
+  if (selectedDistrict == "Barguna") {
     selectedDistrict = "Patuakhali";
   } else if (selectedDistrict == "Noakhali") {
     selectedDistrict = "Lakshmipur";
@@ -132,7 +132,7 @@ function handleFormSubmit(event) {
     selectedDistrict = "Khagrachhari";
   } else if (selectedDistrict == "Sunamganj") {
     selectedDistrict = "Sylhet";
-  } else if (selectedDistrict == "Nator") {
+  } else if (selectedDistrict == "Natore") {
     selectedDistrict = "Rajshahi";
   } else if (selectedDistrict == "Chuadanga") {
     selectedDistrict = "Jhenaidah";
@@ -142,6 +142,10 @@ function handleFormSubmit(event) {
     selectedDistrict = "Jhenaidah";
   } else if (selectedDistrict == "Bagerhat") {
     selectedDistrict = "Khulna";
+  }else if (selectedDistrict == "Jashore") {
+    selectedDistrict = "Jessore";
+  }else if (selectedDistrict == "Cumilla") {
+    selectedDistrict = "Comilla";
   }
 
   var dataToSend = {
@@ -215,7 +219,7 @@ function handleEnvironmentalFormSubmit(event) {
   var selectedDistrict =
     districtSelect.options[districtSelect.selectedIndex].text;
 
-  if (selectedDistrict == "Borguna") {
+  if (selectedDistrict == "Barguna") {
     selectedDistrict = "Patuakhali";
   } else if (selectedDistrict == "Noakhali") {
     selectedDistrict = "Lakshmipur";
@@ -223,7 +227,7 @@ function handleEnvironmentalFormSubmit(event) {
     selectedDistrict = "Khagrachhari";
   } else if (selectedDistrict == "Sunamganj") {
     selectedDistrict = "Sylhet";
-  } else if (selectedDistrict == "Nator") {
+  } else if (selectedDistrict == "Natore") {
     selectedDistrict = "Rajshahi";
   } else if (selectedDistrict == "Chuadanga") {
     selectedDistrict = "Jhenaidah";
@@ -233,6 +237,10 @@ function handleEnvironmentalFormSubmit(event) {
     selectedDistrict = "Jhenaidah";
   } else if (selectedDistrict == "Bagerhat") {
     selectedDistrict = "Khulna";
+  }else if (selectedDistrict == "Jashore") {
+    selectedDistrict = "Jessore";
+  }else if (selectedDistrict == "Cumilla") {
+    selectedDistrict = "Comilla";
   }
 
   var dataToSend = {
