@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/445fe1e4fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+    <title>AGRIQO</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form
+            action="#"
+            class="sign-in-form"
+            onsubmit="handleFormSubmit3(event)"
+          >
+            <h2 class="title">
+              CropSafety Scout
+            </h2>
+            <div class="dropdown dcrop">
+              <label for="crop">Crop:</label>
+              <div class="input-field crop">
+                <i class="fa-solid fa-carrot"></i>
+                <input
+                  type="text"
+                  id="crop"
+                  placeholder="crop/vegetable/fruit to grow"
+                />
+              </div>
+            </div>
+            <input type="submit" value="Get Crop" class="btn solid gcbtn" />
+            <p class="social-text">Or Use Our Other Features</p>
+            <div class="social-media">
+              <a href="index.html" class="social-icon">
+                <i class="fa-solid fa-leaf"></i>
+              </a>
+              <a href="2.html" class="social-icon">
+                <i class="fa-solid fa-calendar-days"></i>
+              </a>
+              <a href="4.html" class="social-icon">
+                <i class="fa-solid fa-skull-crossbones"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>What's Best for Your Crop ?</h3>
+            <p>
+              Wondering which fertilizers, pesticides, and pest management strategies suit your crop best? 
+              Get personalized recommendations tailored to your specific crop needs in this section.
+            </p>
+          </div>
+          <img src="img/7 .svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="modal-text">Some text in the Modal..</p>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

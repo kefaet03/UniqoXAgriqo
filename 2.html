@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/445fe1e4fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+    <title>AGRIQO</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form
+            action="#"
+            class="sign-in-form"
+            onsubmit="handleFormSubmit2(event)"
+          >
+            <h2 class="title">CropClock Adviser</h2>
+            <div class="dropdown">
+              <label for="zoneSelect">Agricultural Zone:</label>
+              <div class="select">
+                <i class="fa-solid fa-wheat-awn"></i>
+                <select id="zoneSelect" onchange="updateDistricts()">
+                  <option value="0">Select a Zone</option>
+                  <option value="1">Barisal</option>
+                  <option value="2">Bogra</option>
+                  <option value="3">Chittagonj</option>
+                  <option value="4">Cumilla</option>
+                  <option value="5">Dhaka</option>
+                  <option value="6">Dinajpur</option>
+                  <option value="7">Faridpur</option>
+                  <option value="8">Jashore</option>
+                  <option value="9">Mymensingh</option>
+                  <option value="10">Rajshahi</option>
+                  <option value="11">Rangamati</option>
+                  <option value="12">Sylhet</option>
+                  <option value="13">Rangpur</option>
+                  <option value="14">Khulna</option>
+                </select>
+                <i class="material-icons">keyboard_arrow_down</i>
+              </div>
+            </div>
+            <div class="dropdown">
+              <label for="districtSelect">District:</label>
+              <div class="select">
+                <i class="fa-solid fa-tree-city"></i>
+                <select id="districtSelect">
+                  <option value="">Please select a zone first!</option>
+                </select>
+                <i class="material-icons">keyboard_arrow_down</i>
+              </div>
+            </div>
+            <div class="dropdown">
+              <label for="cropSelect">Crop:</label>
+              <div class="select">
+                <i class="fa-solid fa-seedling"></i>
+                <select id="cropSelect">
+                  <option value="-1">Select a Crop</option>
+                  <option value="0">Aman</option>
+                  <option value="1">red lentil</option>
+                  <option value="2">tomato</option>
+                  <option value="3">wheat/gom</option>
+                  <option value="4">banana</option>
+                  <option value="5">robi brinjal</option>
+                  <option value="6">khorip brinjal</option>
+                  <option value="7">sugarcane</option>
+                  <option value="8">soybean</option>
+                  <option value="9">Boro</option>
+                  <option value="10">potato</option>
+                  <option value="11">mango</option>
+                  <option value="12">robi pointed gourd</option>
+                  <option value="13">khorip pointed grourd</option>
+                  <option value="14">pineapple</option>
+                  <option value="15">robi green chilli</option>
+                  <option value="16">khorip green chilli</option>
+                  <option value="17">Tula</option>
+                  <option value="18">Rabi Cucumber</option>
+                  <option value="19">Kharif cucumber</option>
+                  <option value="20">garlic</option>
+                  <option value="21">robi lau (gourd)</option>
+                  <option value="22">khorip lau (grourd)</option>
+                  <option value="23">Khorip Mug 1</option>
+                  <option value="24">Robi Mug</option>
+                  <option value="25">Badam robi</option>
+                  <option value="26">Badam Kharip - 1</option>
+                  <option value="27">Guava</option>
+                  <option value="28">jackfruit</option>
+                  <option value="29">indian jujube</option>
+                  <option value="30">jute</option>
+                  <option value="31">licchi</option>
+                  <option value="32">corn khorip-1</option>
+                  <option value="33">corn robi</option>
+                  <option value="34">masterd seed</option>
+                  <option value="35">robi onion</option>
+                  <option value="36">khorip onion</option>
+                  <option value="37">papaya</option>
+                  <option value="38">robi pumpkin Cucurbita</option>
+                  <option value="39">khorip pumpkin Cucurbita</option>
+                  <option value="40">Aush</option>
+                </select>
+                <i class="material-icons">keyboard_arrow_down</i>
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Get Crop"
+              class="btn solid gcbtn"
+              id="btn1"
+            />
+            <p class="social-text">Or Use Our Other Features</p>
+            <div class="social-media">
+              <a href="index.html" class="social-icon"
+                ><i class="fa-solid fa-leaf"></i
+              ></a>
+              <a href="3.html" class="social-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </a>
+              <a href="4.html" class="social-icon">
+                <i class="fa-solid fa-skull-crossbones"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>When's the Perfect Time to Plant ?</h3>
+            <p>
+              It provides farmers with personalized recommendations on the optimal 
+              timing for planting their chosen crops. By inputting the desired crop, 
+              farmers receive tailored advice on the most favorable season or time of year 
+              to maximize their crop's growth and yield potential.
+            </p>
+          </div>
+          <img src="img/9 .svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="modal-text">Some text in the Modal..</p>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
