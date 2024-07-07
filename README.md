@@ -1,6 +1,6 @@
 # UniqoXAgriqo
 
-UniqoXAgriqo is a right now crop recommendation web application designed to help farmers and agricultural enthusiasts determine the most suitable crops for their region and season based on various parameters. This tool leverages AI to analyze weather data and location specifics to provide personalized recommendations.
+UniqoXAgriqo is right now a crop recommendation web application designed to help farmers and agricultural enthusiasts determine the most suitable crops for their region and season based on various parameters. This tool leverages AI to analyze weather data and location specifics to provide personalized recommendations.
 
 ## Features
 
